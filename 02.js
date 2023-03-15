@@ -5,6 +5,14 @@
   No comentar la funcion 
 */
 function stringMasLarga(strings) {
+  var masLarga = strings[0]
+  for (let index = 0; index < strings.length; index++) {
+    if(masLarga.length<strings[index].length){
+      masLarga= strings[index];
+    }
+    
+  }
+  return masLarga;
   // La función llamada 'stringMasLarga', recibe como argumento un arreglo de strings llamado 'strings'
   // y debe devolver el string más largo que hay en el arreglo (Es decir el de mayor cantidad de caracteres)
   // Ej:

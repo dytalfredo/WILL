@@ -5,6 +5,12 @@
   No comentar la funcion 
 */
 function buscarAmigo(amigos, nombre) {
+
+  for (var ami of amigos) {
+    if(ami.nombre === nombre){
+      return ami
+    }
+  }
   // La funcion llamada 'buscarAmigo' recibe como argumento un array llamado 'amigos' que contiene
   // en cada posición del arreglo un objeto que tiene como propiedades 'nombre' y 'edad'. También
   // recibe un string llamado 'nombre'.
