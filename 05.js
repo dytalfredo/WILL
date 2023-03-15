@@ -5,6 +5,11 @@
   No comentar la funcion 
 */
 function pluck(array, propiedad) {
+  var nuevoArray = array.map(function (val) {
+    return val[propiedad]
+  })
+
+  return nuevoArray
   // La función llamada 'pluck' recibe como argumento un array de objetos llamado 'array' y el nombre de una
   // propiedad.
   // La función debe devolver un nuevo arreglo con solo los valores dentro de la propiedad recibida
